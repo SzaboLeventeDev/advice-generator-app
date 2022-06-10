@@ -4,14 +4,14 @@ html{
 body{
     width: 1440px;
     height: 100vh;
-    background-color: hsl(217, 19%, 24%);
+    background-color: hsl(218, 23%, 16%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
 body>main{
-    background-color: hsl(217, 19%, 38%);
+    background-color: hsl(217, 19%, 24%);
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     padding: 20px;
@@ -21,18 +21,37 @@ body>main{
 body>main>.adviceId{
     color: hsl(150, 100%, 66%);
     text-align: center;
+    text-transform: uppercase;
+    
 }
 
 body>main>.advice{
     color: hsl(193, 38%, 86%);
     text-align: center;
-    font-size: 28;
+    font-size: 28px;
     font-weight: 800;
 }
 
 body>main>img{
     display: block;
     margin: 10px auto;
+}
+
+body>main>#dice{
+    border-radius: 35px;
+    padding: 15px;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    bottom: 28%;
+}
+
+body>main>#dice:hover{
+    box-shadow:  0 0 2px 2px hsl(150, 100%, 66%);
+}
+
+body>main>#divider{
+    position: absolute;
+    bottom: 35%;
 }
 
 body>.attribution{
