@@ -12,15 +12,16 @@ body{
     width: 1440px;
     height: 100vh;
     background-color: hsl(218, 23%, 16%);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 body>main{
+    width: min-content;
+    height: min-content;
     background-color: hsl(217, 19%, 24%);
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
     padding: 20px;
     border-radius: 10px;
 }
@@ -29,7 +30,7 @@ body>main>.adviceId{
     color: hsl(150, 100%, 66%);
     text-align: center;
     text-transform: uppercase;
-    
+    letter-spacing: 5px;
 }
 
 body>main>.advice{
@@ -48,20 +49,14 @@ body>main>#dice{
     border-radius: 35px;
     padding: 15px;
     background-color: hsl(150, 100%, 66%);
-    position: absolute;
-    bottom: 28%;
+    position: relative;
+    bottom: -60px;
 }
 
 body>main>#dice:hover{
     box-shadow:  0 0 2px 2px hsl(150, 100%, 66%);
 }
 
-body>main>#divider{
-    position: absolute;
-    bottom: 35%;
-}
-
 body>.attribution{
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
+    margin-top: 30px;
 }
